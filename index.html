@@ -18,31 +18,35 @@
 </div>
 <div class="container">
   <div class="row">
-    <div class="col-sm" id="James">
+    <div class="col-sm">
       <h3 class="text-center">James' visualization</h3>
       <p class="text-center">Title</p>
       <p class="text-center">Short Description</p>
+      <div id="James"></div>
     </div>
   </div>
   <div class="row">
-    <div class="col-sm" id="Aaron">
+    <div class="col-sm">
       <h3 class="text-center">Aaron's visualization</h3>
       <p class="text-center">Title</p>
       <p class="text-center">Short Description</p>
+      <div id="Aaron"></div>
     </div>
   </div>
   <div class="row">
-    <div class="col-sm" id="Jack">
+    <div class="col-sm">
       <h3 class="text-center">Jack's visualization</h3>
       <p class="text-center">Title</p>
       <p class="text-center">Short Description</p>
+      <div id="Jack"></div>
     </div>
   </div>
   <div class="row">
-    <div class="col-sm" id="Derek">
+    <div class="col-sm">
       <h3 class="text-center">Derek's visualization</h3>
       <p class="text-center">Title</p>
       <p class="text-center">Short Description</p>
+      <div id="Derek"></div>
     </div>
   </div>
     
@@ -69,12 +73,12 @@
 import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
 
 // Your notebook, compiled as an ES module.
-import notebook from "https://api.observablehq.com/@pbogden/brushable-earthquakes-ii.js?v=3";
+import notebook from "https://api.observablehq.com/d/8df663d207459709@709.js?v=3";
 
 // Load the notebook, observing its cells with a default Inspector
 // that simply renders the value of each cell into the provided DOM node.
 new Runtime().module(notebook, name => {
-  if (name === "mymap") return new Inspector(document.querySelector("#mymap"));
+  if (name === "chart") return new Inspector(document.querySelector("#Jack"));
   if (name === "mychart") return new Inspector(document.querySelector("#mybrush"));
   if (name === "map_filter") return true;
 });
