@@ -59,7 +59,7 @@
   // that simply renders the value of each cell into the provided DOM node.
   new Runtime().module(notebook, name => {
     if (name === "slider") return new Inspector(document.querySelector("#input"));
-    if (name === "playing1") return new Inspector(document.querySelector("#button"));
+    if (name === "viewof playing1") return new Inspector(document.querySelector("#button"));
     if (name === "mymap") return new Inspector(document.querySelector("#map"));
     if (name === "graph") return new Inspector(document.querySelector("#graph"));
   });
